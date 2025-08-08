@@ -1,0 +1,124 @@
+.separator{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.featured-header{
+     margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    font-family: 'Libre Franklin', sans-serif;
+    color:#999;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+.featured-header:hover{
+    text-decoration: underline #999;
+}
+.separator-line{
+    height: 1px;
+    background-color: #e6e6e6;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+.featured-posts{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.post{
+    width: 100%;
+}
+.featured-post-image{
+    width: 600px;
+}
+.featured-post-category{
+    display: inline-block;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #999;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 24px;
+}
+.featured-post-category:hover{
+    text-decoration: underline #999;
+}
+.featured-post-header{
+    font-family: 'tenor sans', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+.featured-post-header h3{
+    margin-bottom:0;
+    height: auto;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+.author{
+    margin-top: 20px;
+}
+.featured-post-author-text{
+    margin-top: 12px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #000;
+    font-weight: 600;
+}
+.featured-post-author-text a{
+    color: #000;
+    text-decoration: none;
+}
+.featured-post-author-text a:hover{
+     text-decoration: underline #000;
+}
+@media screen and (max-width: 1024px) {
+    .featured-posts {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .featured-post-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .featured-posts {
+        grid-template-columns: 1fr;
+    }
+    .featured-post-header h3 {
+        font-size: 18px;
+    }
+    .separator-line {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .featured-post-header h3 {
+        font-size: 16px;
+    }
+    .featured-post-category {
+        margin-top: 16px;
+    }
+    .separator-line {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

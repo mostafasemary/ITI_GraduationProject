@@ -1,0 +1,13 @@
+<section class="posts-section">
+    <div class="post" *ngFor="let item of post">
+        <a href="#">
+            <img [src]="item.image" alt="post-image" class="post-image" />
+        </a>
+        <a href="#" class="post-category">{{item.category}}</a>
+        <a href="#" class="post-header" style="text-decoration: none;">
+            <h3>{{item.header}}</h3>
+        </a>
+        <p class="post-author-text author">By<a href="#"> {{item.author}}</a></p>
+    </div>
+</section>
+

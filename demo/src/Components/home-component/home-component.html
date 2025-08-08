@@ -1,0 +1,43 @@
+<section class="home fade-in-bottom">
+    <div class="top-post ">
+        <div class="top-post-image-container">
+            <img src="top-post-image.jpg" loading="lazy" alt="top-post"
+                class="top-post-img">
+        </div>
+        <div class="top-post-text">
+            <a href="#" class="top-post-category">Illustration</a>
+            <h2 class="top-post-header">Japan House opens in mountainside to
+                foster peak creativity. </h2>
+            <p class="top-post-details">Enim omittam qui id, ex quo atqui dictas
+                complectitur. Nec ad timeam accusata, hinc justo falli id eum,
+                ferri novum molestie eos cu.</p>
+            <p class="post-author-text">By<a href="#"> Reta Torphy</a></p>
+        </div>
+    </div>
+</section>
+<section class="posts-section fade-in-bottom-2">
+    <div class="post" *ngFor="let item of post">
+        <a href="#">
+            <img [src]="item.image" loading="lazy" alt="post-image"
+                class="post-image" />
+        </a>
+        <a href="#" class="post-category">{{item.category}}</a>
+        <a href="#" class="post-header">
+            <h3>{{item.header}}</h3>
+        </a>
+        <p class="post-author-text author">By<a href="#">
+                {{item.author}}</a></p>
+    </div>
+</section>
+<div class="separator">
+    <div class="separator-line"></div>
+</div>
+<div class="latest-header">
+    latest posts
+</div>
+<app-latest-posts-component></app-latest-posts-component>
+<div class="button">
+    <a href="/latest-posts" class="latest-posts-button">View all latest
+        posts</a>
+</div>
+<app-featured-posts-page></app-featured-posts-page>

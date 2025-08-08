@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+html,body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    height:90px;
+    padding-left:30px;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000; 
+}
+.nav-container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    max-width: 100%;
+    display: inline-block;
+}
+a{
+    background-color: transparent;
+}
+nav{
+    display: flex;
+}
+nav a{
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    font-family:'Libre Franklin', sans-serif; 
+    padding: 34px 20px;
+}

@@ -1,0 +1,20 @@
+<div class="separator">
+    <div class="separator-line"></div>
+</div>
+<div class="featured-header">
+    featured posts
+</div>
+<section class="featured-posts">
+    <div class="post" *ngFor="let item of post">
+        <a href>
+            <img [src]="item.image" alt="post-image"
+                class="featured-post-image" />
+        </a>
+        <a href="#" class="featured-post-category">{{item.category}}</a>
+        <a href="#" class="featured-post-header">
+            <h3>{{item.header}}</h3>
+        </a>
+        <p class="featured-post-author-text author">By<a href="#">
+                {{item.author}}</a></p>
+    </div>
+</section>
